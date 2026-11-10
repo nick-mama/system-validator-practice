@@ -1,4 +1,5 @@
 import json
+import sys
 
 def load_server_data(filename):
     with open(filename, "r") as file:
@@ -90,7 +91,12 @@ def validate_power_supplies(server):
     
     return all_passed
 
-server = load_server_data("server_data.json")
+if len(sys.argv) != 2:
+    print("Usage: py validator.py <server_data.json>")
+    sys.exit(1)
+
+filename = sys.argv[1]
+server = load_server_data(filename)
 
 print("=" * 40)
 print("SERVER VALIDATION REPORT")
