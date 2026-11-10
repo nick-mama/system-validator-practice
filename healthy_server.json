@@ -1,0 +1,51 @@
+{
+  "system": {
+    "model": "SuperServer Demo",
+    "power_state": "On",
+    "health": "OK"
+  },
+
+  "processors": {
+    "count": 2,
+    "health": "OK"
+  },
+
+  "memory": {
+    "total_gb": 256,
+    "health": "OK"
+  },
+
+  "thermal": {
+    "cpu_temperature_c": 62,
+    "max_temperature_c": 85
+  },
+
+  "fans": [
+    {
+      "name": "Fan1",
+      "rpm": 8200,
+      "health": "OK"
+    },
+    {
+      "name": "Fan2",
+      "rpm": 7900,
+      "health": "OK"
+    },
+    {
+      "name": "Fan3",
+      "rpm": 3900,
+      "health": "OK"
+    }
+  ],
+
+  "power_supplies": [
+    {
+      "name": "PSU1",
+      "health": "OK"
+    },
+    {
+      "name": "PSU2",
+      "health": "OK"
+    }
+  ]
+}
